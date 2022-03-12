@@ -1,11 +1,14 @@
 #include <stdio.h>
 
-/*Main - Entry point*/
-/* Return Always 0 (success)*/
-/*here is the main function*/
+/**
+ * Main - here is the main function
+ *
+ *Here is the main function
+ *the main function is int main
+ *This is the main function
+ *no description found for function main
+ */
 int main(void)
-/*This is the main function*/
-/*no description found for function main*/
 {
 	printf("with proper grammar, but the outcome is a piece of art,\n");
 	return (0);
