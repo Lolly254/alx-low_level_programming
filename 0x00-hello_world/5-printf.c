@@ -1,12 +1,9 @@
 #include <stdio.h>
 
 /**
- * Main - here is the main function
+ * Main - main function
  *
- *Here is the main function
- *the main function is int main
- *This is the main function
- *no description found for function main
+ *Return: Always 0 (Success)
  */
 int main(void)
 {
