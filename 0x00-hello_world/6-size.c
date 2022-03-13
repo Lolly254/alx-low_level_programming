@@ -2,8 +2,7 @@
 
 /**
  * Main - prints sizes of types
- *
- * Return 0 if the syntax is perfect
+ * Return: 0 if the syntax is perfect, non- zero otherwise
  */
 int main(void)
 {
