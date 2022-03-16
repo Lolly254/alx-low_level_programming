@@ -2,7 +2,8 @@
 
 /**
  * main - check if the alphabet is small
- * using the ascii table
+ * _islower - establish lowercase or uppercase
+ * @c: where the character is determined
  * Return: 1 if the character is small and 0 if not
  */
 int _islower(int c)
