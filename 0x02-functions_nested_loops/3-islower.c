@@ -5,7 +5,7 @@
  * using the ascii table
  * Return: 1 if the character is small and 0 if not
  */
-int _islower(int c);
+int _islower(int c)
 {
 if (c >= 97 && c <= 122)
 {
