@@ -14,9 +14,9 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, sum;
+	int i, sum = 0;
 
-	if (argc <= 0)
+	if (argc < 48 && argc > 57)
 	{
 		printf("0\n");
 	}
