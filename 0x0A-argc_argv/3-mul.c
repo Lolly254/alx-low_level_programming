@@ -13,18 +13,16 @@
  */
 int main(int argc, char *argv[])
 {
-	int i;
-	int mul;
-
-	for (i = 1; i < argc; i++)
+	int i, j, mul;
+	if (argc <= 2)
 	{
-		mul *= atoi(argv[i]);
-		printf("%d", mul);
-		if (argc < 2)
-		{
 		printf("Error");
-		return (1);
-		}
+		return 1;
 	}
+	/* we use atoi to return integers*/
+	i = atoi(argv[1]);
+	j = atoi(argv[2]);
+	mul = i * j;
+	printf("%d\n", mul);
 	return (0);
 }
