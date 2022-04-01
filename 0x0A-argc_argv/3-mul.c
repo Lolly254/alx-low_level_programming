@@ -14,10 +14,11 @@
 int main(int argc, char *argv[])
 {
 	int i, j, mul;
+
 	if (argc <= 2)
 	{
-		printf("Error");
-		return 1;
+		printf("Error\n");
+		return (1);
 	}
 	/* we use atoi to return integers*/
 	i = atoi(argv[1]);
