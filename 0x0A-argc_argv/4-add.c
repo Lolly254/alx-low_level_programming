@@ -16,11 +16,11 @@ int main(int argc, char *argv[])
 {
 	int i, sum = 0;
 
-	if (argc < 48 && argc > 57)
+	if (argc < '0' || argc > '9')
 	{
 		printf("0\n");
 	}
-	if (argc > 48 && argc < 57)
+	if (argc > '0' || argc < '9')
 	{
 		printf("Error\n");
 		return (1);
