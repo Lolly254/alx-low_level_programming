@@ -1,36 +1,51 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
- * main - program that prints positive integers
- * print 0 if no number is passed followed by new line
- * print Error if one number contains symbols that are not digits,
- * followed by new file then return 1
- * @argc: number of arguments passed
- * @argv: array of elements passed
- *
- * Return: 0
+ * num-checker - checks if a given character is a number or not
+ * @a: char to be checked 
+ * Return: 1 if it is a number, else 0
+ */
+int num_checker(char *a)
+{
+	int i = 0;
+	int num = 0;
+	int len = strlen(a);
+	while (i < len)
+	{
+		if (a[i] < '0' || a[i] > '9')
+		{
+			return (-1);
+		}
+		else
+		{
+			num = num * 10 + (a[i] - '0');
+		}
+		i++;
+	}
+	return (num);
+}
+/**
+ * main - add positive numbers
+ * @argc: argument count
+ * @argv: array of arguments strings
+ * Retrun: result of addition or 1
  */
 int main(int argc, char *argv[])
 {
-	int i, sum = 0;
-
-	if (argc < '0' || argc > '9')
+	int i, num, sum = 0;
+	for (i = 1; i < argc; i++)
 	{
-		printf("0\n");
+		 num = num_checker(argv[i]);
+		 if (num == -1)
+		 {
+		 	printf("Error\n");
+			return (1);
+		}
+		sum += num;
 	}
-	if (argc > '0' || argc < '9')
-	{
-		printf("Error\n");
-		return (1);
-	}
-/* atoi converts strings to numbers*/
-	for (i = 0; i < argc; i++)
-	{
-		sum += atoi(argv[i]);
-		printf("%d\n", sum);
-	}
+	printf("%d\n", num);
 	return (0);
 }
 
