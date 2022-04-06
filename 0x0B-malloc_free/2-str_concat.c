@@ -33,7 +33,7 @@ s3[i] = s1[i];
 i++;
 }
 }
-(s2);
+if (s2);
 {
 while (i < (len1 + len2))
 {
