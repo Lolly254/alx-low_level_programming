@@ -1,5 +1,5 @@
 #!/bin/bash
-read -p "enter commit name:"
+read -p "Hello Lolly! Please enter your push name:"
 git add .
 git commit -m$REPLY
 git push
