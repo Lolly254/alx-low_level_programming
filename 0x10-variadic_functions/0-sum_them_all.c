@@ -12,6 +12,10 @@ int sum_them_all(const unsigned int n, ...)
 	double sum = 0;
 	unsigned int x;
 	va_list a_list;
+	if (n == 0)
+	{
+		return (0);
+	}
 
 	va_start(a_list, n);
 
@@ -20,11 +24,6 @@ int sum_them_all(const unsigned int n, ...)
 		sum += va_arg(a_list, unsigned int);
 	}
 	va_end(a_list);
-	if (n == 0)
-	{
-		return (0);
-	}
-
 	return (sum);
 }
 
