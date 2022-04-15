@@ -17,10 +17,6 @@ int sum_them_all(const unsigned int n, ...)
 
 	for (x = 0; x < n; x++)
 	{
-		if (x == 0)
-		{
-			return (0);
-		}
 		sum += va_arg(a_list, unsigned int);
 	}
 	va_end(a_list);
