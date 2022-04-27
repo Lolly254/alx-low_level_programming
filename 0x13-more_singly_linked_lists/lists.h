@@ -5,6 +5,12 @@
 #include <stdlib.h>
 #include <stddef.h>
 
+/**
+ * struct listint_s - is a node
+ * @n: is the data in the listint_s
+ * @next: pointer to the next node
+ */
+
 typedef struct listint_s
 {
 	int n;
