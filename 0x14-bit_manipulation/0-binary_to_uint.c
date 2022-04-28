@@ -19,12 +19,16 @@ unsigned int binary_to_uint(const char *b)
 		return (0);
 	i = bi_len - 1;
 
-	while (b[i] >= 0)
+	while (i >= 0)
 	{
-		if (b[i] == 1)
-			total += base_ten;
-		base_ten *= 2;
+		if (b[i] < '0' || b[i] > '1')
+			return (0);
+		if (b[i] == '1')
+		{
+			total += bi_len;
+		}
 		i--;
+		bi_len *= 2;
 	}
 	return (total);
 }
