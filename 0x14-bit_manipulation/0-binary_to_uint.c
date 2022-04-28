@@ -27,8 +27,8 @@ unsigned int binary_to_uint(const char *b)
 		{
 			total += bi_len;
 		}
-		i--;
 		bi_len *= 2;
+		i--;
 	}
 	return (total);
 }
