@@ -12,9 +12,9 @@ unsigned int binary_to_uint(const char *b)
 {
 	int slen = strlen(b);
 	int total = 0;
-	int decval = 1;
+	unsigned int decval = 1;
 
-	if (b == NULL)
+	if (!b)
 		return (0);
 	int i = (slen - 1);
 
