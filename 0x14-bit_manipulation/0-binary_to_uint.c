@@ -10,27 +10,17 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int i;
-	int total = 0;
-	int base_ten = 1;
-	int bi_len = strlen(b);
+int i;
+unsigned int dec_val = 0;
 
-	if (b == NULL)
-	       return (0);
-	i = bi_len - 1;
-	        
-	while (i >= 0)
-	{
-		if (b[i] < '0' || b[i] > '1')
-		{
-			return (0);
-		}
-		if (b[i] == '1')
-		{
-			total += base_ten;
-		}
-		base_ten *= 2;
-		i--;
-	}
-	return (total);
+if (!b)
+return (0);
+
+for (i = 0; b[i]; i++)
+{
+if (b[i] < '0' || b[i] > '1')
+return (0);
+dec_val = 2 * dec_val + (b[i] - '0');
+}
+return (dec_val);
 }
