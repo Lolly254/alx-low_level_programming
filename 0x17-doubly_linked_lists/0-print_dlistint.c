@@ -1,9 +1,9 @@
 #include "lists.h"
 
 /**
- * print_slistint - prints the elements of a list
- * h: the first pointer
- * Returns: the number of lists
+ * print_dlistint - prints the elements of a list
+ * @h: the first pointer
+ * Return: 0 if success else 1
  */
 size_t print_dlistint(const dlistint_t *h)
 {
